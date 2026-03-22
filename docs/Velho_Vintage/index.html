@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Velho Vintage | Cortes de Precisão &amp; Estilo Atemporal</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dedacb",
+                        "on-secondary-fixed": "#00174a",
+                        "tertiary-fixed-dim": "#cbc6b8",
+                        "on-surface": "#1d1c13",
+                        "surface-container-low": "#f8f3e4",
+                        "surface-container-highest": "#e7e2d4",
+                        "on-background": "#1d1c13",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c4c7c7",
+                        "inverse-surface": "#323127",
+                        "on-primary-fixed-variant": "#92030f",
+                        "primary-fixed": "#ffdad6",
+                        "inverse-primary": "#ffb4ac",
+                        "tertiary-container": "#1d1c13",
+                        "secondary-container": "#9cb4fe",
+                        "tertiary": "#000000",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#1d1c13",
+                        "error-container": "#ffdad6",
+                        "surface": "#fef9ea",
+                        "surface-container-high": "#ede8d9",
+                        "outline": "#747878",
+                        "on-tertiary-fixed-variant": "#49473c",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "secondary-fixed": "#dbe1ff",
+                        "secondary": "#435b9f",
+                        "surface-container": "#f3eedf",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#2a4386",
+                        "tertiary-fixed": "#e7e2d4",
+                        "on-secondary-container": "#2a4486",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#ea4b44",
+                        "on-primary-fixed": "#410003",
+                        "surface-variant": "#e7e2d4",
+                        "primary-container": "#410003",
+                        "on-tertiary-container": "#878477",
+                        "on-surface-variant": "#444748",
+                        "background": "#fef9ea",
+                        "surface-tint": "#b52424",
+                        "primary": "#000000",
+                        "inverse-on-surface": "#f6f1e2",
+                        "surface-bright": "#fef9ea",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "error": "#ba1a1a"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .barber-pole-accent {
+            background: repeating-linear-gradient(45deg,
+                    #435b9f,
+                    #435b9f 10px,
+                    #ffffff 10px,
+                    #ffffff 20px,
+                    #ba1a1a 20px,
+                    #ba1a1a 30px,
+                    #ffffff 30px,
+                    #ffffff 40px);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-350px * 5));
+            }
+        }
+
+        .carousel-track {
+            display: flex;
+            width: calc(350px * 10);
+            animation: scroll 40s linear infinite;
+        }
+
+        .carousel-track:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-error selection:text-white">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#fef9ea]/90 backdrop-blur-xl shadow-[0px_20px_40px_rgba(29,28,19,0.08)]">
+        <div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+            <a class="flex items-center gap-3 text-2xl font-bold tracking-tighter text-black uppercase font-headline" href="#">
+                <img src="logo.jpg" alt="Logo" class="w-10 h-10 rounded-full object-cover">
+                VELHO VINTAGE
+            </a>
+            <div class="hidden md:flex items-center space-x-12">
+                <a class="font-headline uppercase tracking-tighter text-black transition-all duration-300 border-b-2 border-transparent hover:border-black pb-1"
+                    href="#services">Serviços</a>
+                <a class="font-headline uppercase tracking-tighter text-black/60 hover:text-black transition-all duration-300 border-b-2 border-transparent hover:border-black pb-1"
+                    href="#gallery">Galeria</a>
+                <a class="font-headline uppercase tracking-tighter text-black/60 hover:text-black transition-all duration-300 border-b-2 border-transparent hover:border-black pb-1"
+                    href="#why-us">Sobre</a>
+                <a class="font-headline uppercase tracking-tighter text-black/60 hover:text-black transition-all duration-300 border-b-2 border-transparent hover:border-black pb-1"
+                    href="#location">Localização</a>
+            </div>
+            <button
+                class="bg-black text-white px-8 py-3 font-headline uppercase tracking-widest text-sm hover:bg-error transition-all duration-300 active:scale-95">
+                AGENDAR AGORA
+            </button>
+        </div>
+    </nav>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative min-h-[921px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="Interior de barbearia moderna" class="w-full h-full object-cover"
+                    src="espaco.png" />
+                <div class="absolute inset-0 bg-black/40"></div>
+            </div>
+            <div class="relative z-10 w-full max-w-[1440px] mx-auto px-8">
+                <div class="max-w-4xl">
+                    <div class="w-16 h-1 barber-pole-accent mb-8"></div>
+                    <h1
+                        class="text-white font-headline text-6xl md:text-8xl font-bold uppercase tracking-tighter leading-[0.95] mb-8">
+                        O Herdeiro Moderno:<br />Cortes de Precisão,<br />Estilo Atemporal.
+                    </h1>
+                    <p class="text-white/90 text-xl md:text-2xl font-light max-w-2xl mb-12 leading-relaxed">
+                        Velho Vintage. Um clássico de vizinhança para quem valoriza detalhes,
+                        profissionalismo e qualidade superior.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-white text-black px-12 py-5 font-headline uppercase tracking-widest text-lg hover:bg-error hover:text-white transition-all duration-300 active:scale-95">
+                            MARCAR HORÁRIO
+                        </button>
+                        <button
+                            class="border border-white/30 text-white backdrop-blur-md px-12 py-5 font-headline uppercase tracking-widest text-lg hover:bg-white hover:text-black transition-all duration-300 active:scale-95">
+                            VER SERVIÇOS
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="py-32 bg-surface" id="about">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="w-full lg:w-3/5 relative">
+                        <div class="aspect-[4/5] bg-surface-container-highest overflow-hidden">
+                            <img alt="Barbeiro trabalhando"
+                                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                                data-alt="Barbeiro profissional"
+                                src="dono.png" />
+                        </div>
+                        <div class="absolute -bottom-8 -right-8 bg-error text-white p-12 hidden md:block">
+                            <span
+                                class="font-headline text-5xl font-bold uppercase tracking-tighter leading-none">EST.<br />2024</span>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/5">
+                        <span
+                            class="font-headline text-error uppercase tracking-widest text-sm font-bold mb-4 block">Herança
+                            e Estilo</span>
+                        <h2
+                            class="text-6xl font-headline font-bold uppercase tracking-tighter leading-[1.1] mb-8 text-black">
+                            A Arte do Corte.
+                        </h2>
+                        <div class="space-y-6 text-black/70 text-lg leading-relaxed">
+                            <p>
+                                No Velho Vintage, acreditamos que o cuidado pessoal é mais do que rotina; é um
+                                ritual. Eliminamos o supérfluo para retornar à essência
+                                do ofício: precisão, conversa e comunidade.
+                            </p>
+                            <p>
+                                Cada ferramenta é curada, cada ângulo é calculado e cada cliente é tratado como um
+                                convidado em nossa casa. Somos um negócio local dedicado à arte monumental do corte
+                                mestre.
+                            </p>
+                        </div>
+                        <div class="mt-12 pt-12 border-t border-black/5">
+                            <h3 class="font-headline text-3xl font-bold uppercase tracking-tighter">Velho Vintage</h3>
+                            <p class="font-headline uppercase tracking-widest text-xs mt-4 font-bold">Velho Vintage
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="py-32 bg-surface-container-low" id="services">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="flex justify-between items-end mb-16">
+                    <div>
+                        <h2 class="text-7xl font-headline font-bold uppercase tracking-tighter text-black">
+                            Cuidados Premium.
+                        </h2>
+                        <p class="text-xl text-black/60 mt-4 font-light">Ferramentas de precisão. Maestria profissional.
+                        </p>
+                    </div>
+                    <div class="hidden md:block h-px flex-grow mx-12 bg-black/10 mb-6"></div>
+                    <div class="flex items-center gap-2 font-headline uppercase tracking-widest text-sm font-bold">
+                        Role <span class="material-symbols-outlined">south</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+                    <!-- Service 1 -->
+                    <div
+                        class="group bg-surface p-12 hover:bg-black transition-all duration-500 min-h-[400px] flex flex-col justify-between">
+                        <div>
+                            <span class="text-error font-headline font-bold text-xl mb-4 block">01</span>
+                            <h3
+                                class="text-3xl font-headline font-bold uppercase tracking-tight text-black group-hover:text-white mb-4">
+                                Corte Clássico</h3>
+                            <p class="text-black/60 group-hover:text-white/60 leading-relaxed">Uma experiência
+                                personalizada que inclui consultoria, lavagem e finalização com pomadas premium.</p>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-2xl font-headline font-bold text-black group-hover:text-white">R$
+                                80+</span>
+                            <span
+                                class="material-symbols-outlined text-black group-hover:text-white text-4xl transform group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div
+                        class="group bg-surface p-12 hover:bg-black transition-all duration-500 min-h-[400px] flex flex-col justify-between">
+                        <div>
+                            <span class="text-secondary font-headline font-bold text-xl mb-4 block">02</span>
+                            <h3
+                                class="text-3xl font-headline font-bold uppercase tracking-tight text-black group-hover:text-white mb-4">
+                                Barba Terapia</h3>
+                            <p class="text-black/60 group-hover:text-white/60 leading-relaxed">Escultura, alinhamento e
+                                tratamento com toalha quente para o cavalheiro exigente.</p>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-2xl font-headline font-bold text-black group-hover:text-white">R$
+                                60+</span>
+                            <span
+                                class="material-symbols-outlined text-black group-hover:text-white text-4xl transform group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div
+                        class="group bg-surface p-12 hover:bg-black transition-all duration-500 min-h-[400px] flex flex-col justify-between">
+                        <div>
+                            <span class="text-error font-headline font-bold text-xl mb-4 block">03</span>
+                            <h3
+                                class="text-3xl font-headline font-bold uppercase tracking-tight text-black group-hover:text-white mb-4">
+                                Barba Navalhada</h3>
+                            <p class="text-black/60 group-hover:text-white/60 leading-relaxed">O luxo definitivo.
+                                Barbear com toalha quente em múltiplas etapas e precisão de navalha.</p>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-2xl font-headline font-bold text-black group-hover:text-white">R$
+                                90+</span>
+                            <span
+                                class="material-symbols-outlined text-black group-hover:text-white text-4xl transform group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div
+                        class="md:col-span-2 group relative overflow-hidden bg-black min-h-[400px] flex flex-col justify-center p-12">
+                        <img alt="Combo serviço completo"
+                            class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTZ9M-VNWa6jCkDxHjAAf_C9jo55-tnvP4X7frisWkxbg8ZXRnWgbTVTBk0sd40q38y8vLqjl6cnpg_1Gv35KM-5VMxPLsIRdDwri8xCXOZ3hwfwHENeTjNRFXAX03sRG_TvneQUjRjJgmLUIJOiSWzMlSnuBm6Sv62WLsSJ1FPDBURGr9wOT6UTeh0G8rMkQ12MY2xuC4zH8jWYRBzAIS-n4UKBFGmpVcOyPfQHONkTLoC-ZPfs1VIsJGoMnrRIbP7wV_XJy0j8Q" />
+                        <div class="relative z-10">
+                            <span class="text-secondary font-headline font-bold text-xl mb-4 block">04</span>
+                            <h3 class="text-5xl font-headline font-bold uppercase tracking-tighter text-white mb-6">
+                                Combo Barba e Cabelo</h3>
+                            <p class="text-white/70 max-w-md text-lg leading-relaxed mb-8">A renovação completa. Corte
+                                total e cuidado meticuloso com a barba para um visual afiado e coeso.</p>
+                            <span class="text-3xl font-headline font-bold text-white">R$ 130+</span>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div
+                        class="group bg-surface p-12 hover:bg-black transition-all duration-500 min-h-[400px] flex flex-col justify-between">
+                        <div>
+                            <span class="text-error font-headline font-bold text-xl mb-4 block">05</span>
+                            <h3
+                                class="text-3xl font-headline font-bold uppercase tracking-tight text-black group-hover:text-white mb-4">
+                                Corte Kids</h3>
+                            <p class="text-black/60 group-hover:text-white/60 leading-relaxed">Iniciando os pequenos com
+                                os mesmos padrões profissionais dos veteranos.</p>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-2xl font-headline font-bold text-black group-hover:text-white">R$
+                                50+</span>
+                            <span
+                                class="material-symbols-outlined text-black group-hover:text-white text-4xl transform group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us -->
+        <section class="py-32 bg-surface" id="why-us">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+                    <div class="space-y-4">
+                        <span class="material-symbols-outlined text-error text-5xl">content_cut</span>
+                        <h4 class="font-headline font-bold uppercase tracking-tight text-xl">Barbeiro Experiente</h4>
+                        <p class="text-black/50 text-sm leading-relaxed">Anos de maestria garantindo que cada corte seja
+                            executado com precisão clínica.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <span class="material-symbols-outlined text-secondary text-5xl">sanitizer</span>
+                        <h4 class="font-headline font-bold uppercase tracking-tight text-xl">Ambiente Impecável</h4>
+                        <p class="text-black/50 text-sm leading-relaxed">Limpeza cirúrgica e uma atmosfera confortável
+                            para sua total tranquilidade.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <span class="material-symbols-outlined text-error text-5xl">visibility</span>
+                        <h4 class="font-headline font-bold uppercase tracking-tight text-xl">Atenção ao Detalhe</h4>
+                        <p class="text-black/50 text-sm leading-relaxed">Focamos nos refinamentos milimétricos que
+                            definem um corte de classe mundial.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <span class="material-symbols-outlined text-secondary text-5xl">precision_manufacturing</span>
+                        <h4 class="font-headline font-bold uppercase tracking-tight text-xl">Material Premium</h4>
+                        <p class="text-black/50 text-sm leading-relaxed">Utilizando o melhor aço japonês e ferramentas
+                            elétricas de elite para resultados perfeitos.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <span class="material-symbols-outlined text-error text-5xl">history_edu</span>
+                        <h4 class="font-headline font-bold uppercase tracking-tight text-xl">Clássico Moderno</h4>
+                        <p class="text-black/50 text-sm leading-relaxed">A alma de uma barbearia vintage com a
+                            sensibilidade estética do mundo moderno.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section -->
+        <section class="py-32 bg-black overflow-hidden" id="gallery">
+            <div class="max-w-[1440px] mx-auto px-8 mb-16">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+                    <div>
+                        <h2 class="text-7xl font-headline font-bold uppercase tracking-tighter text-white mb-4">A
+                            GALERIA.</h2>
+                        <p class="text-white/60 text-xl font-light">Estilo em cada detalhe. Precisão em cada corte.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <button
+                            class="w-14 h-14 border border-white/20 flex items-center justify-center text-white hover:bg-error hover:border-error transition-all duration-300">
+                            <span class="material-symbols-outlined">west</span>
+                        </button>
+                        <button
+                            class="w-14 h-14 border border-white/20 flex items-center justify-center text-white hover:bg-error hover:border-error transition-all duration-300">
+                            <span class="material-symbols-outlined">east</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="carousel-track space-x-8">
+                    <!-- Iteração 1 -->
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                src="corte1.png" />
+                        </div>
+                    </div>
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                src="corte2.png" />
+                        </div>
+                    </div>
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                src="corte3.png" />
+                        </div>
+                    </div>
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                src="corte4.png" />
+                        </div>
+                    </div>
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                src="corte5.png" />
+                        </div>
+                    </div>
+                    <!-- Duplicação (Iteração 2 para Scroll) -->
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                src="corte1.png" />
+                        </div>
+                    </div>
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                src="corte2.png" />
+                        </div>
+                    </div>
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                src="corte3.png" />
+                        </div>
+                    </div>
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                src="corte4.png" />
+                        </div>
+                    </div>
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                src="corte5.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="py-32 bg-surface-container-highest">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="text-center mb-20">
+                    <h2 class="text-5xl md:text-7xl font-headline font-bold uppercase tracking-tighter text-black">O que
+                        nossos clientes dizem.</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-surface p-12 border-l-4 border-error">
+                        <div class="flex gap-1 mb-6">
+                            <span class="material-symbols-outlined text-error"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-error"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-error"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-error"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-error"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-xl italic text-black/80 mb-8 leading-relaxed">"O melhor corte que já tive em
+                            anos. A atenção aos detalhes é inigualável. O Fast Eddie não é apenas um barbeiro; ele é um
+                            artista."</p>
+                        <p class="font-headline font-bold uppercase tracking-widest text-sm">— James Montgomery</p>
+                    </div>
+                    <div class="bg-surface p-12 border-l-4 border-secondary">
+                        <div class="flex gap-1 mb-6">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-xl italic text-black/80 mb-8 leading-relaxed">"Finalmente encontrei um lugar que
+                            entende o que é um fade de verdade. A vibração é impecável e o serviço é extremamente
+                            profissional."</p>
+                        <p class="font-headline font-bold uppercase tracking-widest text-sm">— David Chen</p>
+                    </div>
+                    <div class="bg-surface p-12 border-l-4 border-black">
+                        <div class="flex gap-1 mb-6">
+                            <span class="material-symbols-outlined text-black"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-black"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-black"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-black"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-black"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-xl italic text-black/80 mb-8 leading-relaxed">"O barbear com toalha quente é uma
+                            necessidade absoluta. Vale cada centavo. Um verdadeiro tesouro local."</p>
+                        <p class="font-headline font-bold uppercase tracking-widest text-sm">— Marcus Thorne</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-32 relative overflow-hidden bg-black">
+            <div class="absolute inset-0 opacity-20">
+                <div class="w-full h-full barber-pole-accent" style="transform: skewY(-10deg) scale(2);"></div>
+            </div>
+            <div class="relative z-10 max-w-4xl mx-auto px-8 text-center">
+                <h2 class="text-6xl md:text-8xl font-headline font-bold uppercase tracking-tighter text-white mb-8">
+                    Sinta-se Confiante.<br />Mantenha o Estilo.</h2>
+                <p class="text-white/60 text-xl mb-12 font-light">Pare de se contentar com o 'bom o suficiente'.
+                    Experimente a precisão de um mestre barbeiro.</p>
+                <button
+                    class="bg-error text-white px-16 py-6 font-headline uppercase tracking-widest text-xl hover:bg-white hover:text-black transition-all duration-300 active:scale-95">
+                    AGENDE SEU HORÁRIO HOJE
+                </button>
+            </div>
+        </section>
+        <!-- Location & Contact -->
+        <section class="py-32 bg-surface" id="location">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="flex flex-col lg:flex-row gap-16">
+                    <div class="w-full lg:w-1/2">
+                        <h2 class="text-6xl font-headline font-bold uppercase tracking-tighter mb-12">Onde Estamos.</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                            <div>
+                                <h4 class="font-headline uppercase tracking-widest text-xs font-bold text-error mb-4">
+                                    Endereço</h4>
+                                <p class="text-2xl font-light">R. Vitórino Póli, 132<br />Maracanã<br />Colombo
+                                    - PR, 83408-480<br />Brasil</p>
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-headline uppercase tracking-widest text-xs font-bold text-secondary mb-4">
+                                    Contato</h4>
+                                <p class="text-2xl font-light">T: (41) 99689-1561</p>
+                            </div>
+                            <div class="md:col-span-2">
+                                <h4 class="font-headline uppercase tracking-widest text-xs font-bold text-black mb-4">
+                                    Horários</h4>
+                                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-lg">
+                                    <span>Seg - Sex</span> <span class="text-right">09:00 — 19:00</span>
+                                    <span>Sábado</span> <span class="text-right">10:00 — 18:00</span>
+                                    <span>Domingo</span> <span class="text-right">Fechado</span>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="space-y-8">
+                            <div class="relative">
+                                <input
+                                    class="w-full bg-transparent border-0 border-b border-black/10 py-4 focus:ring-0 focus:border-error transition-all font-headline tracking-widest text-sm"
+                                    placeholder="NOME COMPLETO" type="text" />
+                            </div>
+                            <!-- Email removido -->
+                            <div class="relative">
+                                <textarea
+                                    class="w-full bg-transparent border-0 border-b border-black/10 py-4 focus:ring-0 focus:border-error transition-all font-headline tracking-widest text-sm resize-none"
+                                    placeholder="COMO PODEMOS AJUDAR?" rows="4"></textarea>
+                            </div>
+                            <button
+                                class="bg-black text-white px-12 py-4 font-headline uppercase tracking-widest text-sm hover:bg-secondary transition-all">ENVIAR
+                                MENSAGEM</button>
+                        </form>
+                    </div>
+                    <div class="w-full lg:w-1/2 min-h-[500px] bg-surface-container-highest relative">
+                        <iframe
+                            src="https://maps.google.com/maps?q=R.+Vit%C3%B3rino+P%C3%B3li,+132+-+Maracan%C3%A3,+Colombo+-+PR,+83408-480,+Brasil&amp;output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#f8f3e4] border-t border-black/5">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 gap-8 max-w-[1440px] mx-auto">
+            <div class="flex flex-col items-center md:items-start">
+                <a class="flex items-center gap-3 text-xl font-bold tracking-tighter text-black uppercase font-headline mb-2"
+                    href="#">
+                    <img src="logo.jpg" alt="Logo" class="w-8 h-8 rounded-full object-cover">
+                    VELHO VINTAGE
+                </a>
+                <p class="text-[10px] font-['Manrope'] uppercase tracking-widest text-black/50">CORTES DE PRECISÃO.
+                    ESTILO ATEMPORAL.</p>
+            </div>
+            <div class="flex gap-8">
+                <a class="text-[10px] font-['Manrope'] uppercase tracking-widest text-black/50 hover:text-red-600 transition-colors"
+                    href="#">Privacidade</a>
+                <a class="text-[10px] font-['Manrope'] uppercase tracking-widest text-black/50 hover:text-red-600 transition-colors"
+                    href="#">Termos</a>
+                <a class="text-[10px] font-['Manrope'] uppercase tracking-widest text-black/50 hover:text-red-600 transition-colors"
+                    href="#">Carreiras</a>
+                <a class="text-[10px] font-['Manrope'] uppercase tracking-widest text-black/50 hover:text-red-600 transition-colors"
+                    href="#">Acessibilidade</a>
+            </div>
+            <div class="flex gap-6">
+                <a class="text-black hover:text-secondary transition-colors" href="#"><span
+                        class="material-symbols-outlined">public</span></a>
+                <a class="text-black hover:text-error transition-colors" href="#"><span
+                        class="material-symbols-outlined">share</span></a>
+                <a class="text-black hover:text-secondary transition-colors" href="#"><span
+                        class="material-symbols-outlined">alternate_email</span></a>
+            </div>
+        </div>
+        <div class="w-full px-8 py-6 border-t border-black/5 text-center">
+            <p class="text-[10px] font-['Manrope'] uppercase tracking-widest text-black/40">© 2024 VELHO VINTAGE.
+                TODOS OS DIREITOS RESERVADOS.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
