@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>FAST EDDIE | Coast Barber Shop – Cortes de Precisão &amp; Estilo Atemporal</title>
+    <title>Barbearia Alfa | Cortes de Precisão &amp; Estilo Atemporal</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -103,18 +103,12 @@
         }
 
         @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(-350px * 5));
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-382px * 5)); }
         }
-
         .carousel-track {
             display: flex;
-            width: calc(350px * 10);
+            width: max-content;
             animation: scroll 40s linear infinite;
         }
 
@@ -203,7 +197,10 @@
     <!-- TopNavBar -->
     <nav class="fixed top-0 w-full z-50 bg-[#fef9ea]/90 backdrop-blur-xl shadow-[0px_20px_40px_rgba(29,28,19,0.08)]">
         <div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
-            <a class="text-2xl font-bold tracking-tighter text-black uppercase font-headline" href="#">FAST EDDIE</a>
+            <a class="flex items-center gap-3 text-2xl font-bold tracking-tighter text-black uppercase font-headline" href="#">
+                <img src="logo.jpg" alt="Logo" class="w-10 h-10 rounded-full object-cover">
+                BARBEARIA ALFA
+            </a>
             <div class="hidden md:flex items-center space-x-12">
                 <a class="font-headline uppercase tracking-tighter text-black transition-all duration-300 border-b-2 border-transparent hover:border-black pb-1"
                     href="#services">Serviços</a>
@@ -214,10 +211,9 @@
                 <a class="font-headline uppercase tracking-tighter text-black/60 hover:text-black transition-all duration-300 border-b-2 border-transparent hover:border-black pb-1"
                     href="#location">Localização</a>
             </div>
-            <button
-                class="bg-black text-white px-8 py-3 font-headline uppercase tracking-widest text-sm hover:bg-error transition-all duration-300 active:scale-95">
+            <a href="https://wa.me/5541997831784?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="bg-black text-white px-8 py-3 font-headline uppercase tracking-widest text-sm hover:bg-error transition-all duration-300 active:scale-95 flex items-center justify-center">
                 AGENDAR AGORA
-            </button>
+            </a>
         </div>
     </nav>
     <main class="pt-24">
@@ -226,7 +222,7 @@
             <div class="absolute inset-0 z-0 scale-110 transition-transform duration-[3s] ease-out" id="hero-bg">
                 <img alt="Interior de barbearia moderna" class="w-full h-full object-cover"
                     data-alt="Barbearia moderna luxuosa com cadeiras de couro e detalhes em madeira"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv-OUKelinHArBcEam-_Pa4BHzDU1E6pHjtE1o8JHaOPaHdjieIaivEUQKwBHJTv7vFMqjVzdAjCYtANBwiYTu9SoL3ui00Rgv9MI5FVRkUO-DNTy4lkUDAr2flLEM1JuNTQiprydYOLPUA8b3Vst6P46sbmykEUDxfoa3Zl1FxF9_EhuTBnz_rWn7XUh2BcmfvdBNwTO-2MIKhEULfHPAsrrkptU2SbbtrrjtJVg2M85EW4KwX72jN3uoW_bCus53iUSSGJ_bMk0" />
+                    src="espaco.png" />
                 <div class="absolute inset-0 bg-black/40"></div>
             </div>
             <div class="relative z-10 w-full max-w-[1440px] mx-auto px-8">
@@ -238,14 +234,14 @@
                     </h1>
                     <p
                         class="text-white/90 text-xl md:text-2xl font-light max-w-2xl mb-12 leading-relaxed reveal delay-3">
-                        Coast Barber Shop – Fast Eddie. Um clássico de vizinhança para quem valoriza detalhes,
+                        Barbearia Alfa. Um clássico de vizinhança para quem valoriza detalhes,
                         profissionalismo e qualidade superior.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 reveal delay-4">
-                        <button
-                            class="bg-white text-black px-12 py-5 font-headline uppercase tracking-widest text-lg hover:bg-error hover:text-white transition-all duration-300 active:scale-95">
+                        <a href="https://wa.me/5541997831784?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank"
+                            class="bg-white text-black px-12 py-5 font-headline uppercase tracking-widest text-lg hover:bg-error hover:text-white transition-all duration-300 active:scale-95 flex items-center justify-center">
                             MARCAR HORÁRIO
-                        </button>
+                        </a>
                         <button
                             class="border border-white/30 text-white backdrop-blur-md px-12 py-5 font-headline uppercase tracking-widest text-lg hover:bg-white hover:text-black transition-all duration-300 active:scale-95">
                             VER SERVIÇOS
@@ -281,8 +277,8 @@
                         </h2>
                         <div class="space-y-6 text-black/70 text-lg leading-relaxed">
                             <p>
-                                Na Coast Barber Shop, acreditamos que o cuidado pessoal é mais do que rotina; é um
-                                ritual. Sob a direção de "Fast Eddie", eliminamos o supérfluo para retornar à essência
+                                Na Barbearia Alfa, acreditamos que o cuidado pessoal é mais do que rotina; é um
+                                ritual. Eliminamos o supérfluo para retornar à essência
                                 do ofício: precisão, conversa e comunidade.
                             </p>
                             <p>
@@ -292,11 +288,8 @@
                             </p>
                         </div>
                         <div class="mt-12 pt-12 border-t border-black/5 reveal delay-2">
-                            <img alt="Assinatura Fast Eddie" class="h-12 opacity-80"
-                                data-alt="Assinatura manuscrita autêntica de Fast Eddie em tinta preta"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO4fx9e91Eu9lj_ssMETvQYZJZCax6L73KyLNL_rNOeE-CjUKaosC06_GcfCupgl078Vx1M1N1pwbw67XMIgSn096uesijH8EJd_0cOPATcccAyxwSvwhoUomjybz_hItw6EpG13CBmqW9qKm0mrLMaYYXQ3v0D-AY7XQrwWT3IBfk_fwhcGtCUoUQFMui3K-9J41OI_ww7wRqvSFEmJa-VhcSCHLv49lUF7RtnS_vfyvrK5LhTOCHOsjd8v527KiomdvctbrNLLE" />
-                            <p class="font-headline uppercase tracking-widest text-xs mt-4 font-bold">Eddie "Fast Eddie"
-                                Coast</p>
+                            <h3 class="font-headline text-3xl font-bold uppercase tracking-tighter">BARBEARIA ALFA</h3>
+                            <p class="font-headline uppercase tracking-widest text-xs mt-4 font-bold">Barbearia Alfa</p>
                         </div>
                     </div>
                 </div>
@@ -472,49 +465,63 @@
                     <!-- Item 1 -->
                     <div class="w-[350px] flex-shrink-0 group relative overflow-hidden reveal delay-1">
                         <div class="aspect-[3/4] overflow-hidden">
-                            <img alt="Classic Fade"
-                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn5P1yaewWgP56_GS-KqHmDQCiWl8FiNByxNSctgaGn5hTSxaz64t7RDH6KVvzrxOc8K_-xIGt_qOulOiMm7k-OdtRn8NjeJLY8zZJD9k70x9NyLukDWCuMAxJr_S8Wj9jJo0VaiHc1JKDgknWjjJE93-L-sql7QQcK8GrDAI7hkartbInMlgFLSWIzuCKqlxvE6AQE5YGfgQaG5pTDZy4pQn2DzbvLlxJqDkk5oNpw2Pb2U2fsqYMrGzio6JRQA9d4mZmAwvfA6w" />
-                        </div>
-                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent">
-                            <p class="font-headline text-white uppercase tracking-widest text-sm font-bold">Classic Fade
-                            </p>
+                            <img alt="Corte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="corte1.png" />
                         </div>
                     </div>
                     <!-- Item 2 -->
                     <div class="w-[350px] flex-shrink-0 group relative overflow-hidden reveal delay-2">
                         <div class="aspect-[3/4] overflow-hidden">
-                            <img alt="Executive Contour"
-                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv-OUKelinHArBcEam-_Pa4BHzDU1E6pHjtE1o8JHaOPaHdjieIaivEUQKwBHJTv7vFMqjVzdAjCYtANBwiYTu9SoL3ui00Rgv9MI5FVRkUO-DNTy4lkUDAr2flLEM1JuNTQiprydYOLPUA8b3Vst6P46sbmykEUDxfoa3Zl1FxF9_EhuTBnz_rWn7XUh2BcmfvdBNwTO-2MIKhEULfHPAsrrkptU2SbbtrrjtJVg2M85EW4KwX72jN3uoW_bCus53iUSSGJ_bMk0" />
-                        </div>
-                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent">
-                            <p class="font-headline text-white uppercase tracking-widest text-sm font-bold">Executive
-                                Contour</p>
+                            <img alt="Corte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="corte2.png" />
                         </div>
                     </div>
                     <!-- Item 3 -->
                     <div class="w-[350px] flex-shrink-0 group relative overflow-hidden reveal delay-3">
                         <div class="aspect-[3/4] overflow-hidden">
-                            <img alt="Modern Pompadour"
-                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTZ9M-VNWa6jCkDxHjAAf_C9jo55-tnvP4X7frisWkxbg8ZXRnWgbTVTBk0sd40q38y8vLqjl6cnpg_1Gv35KM-5VMxPLsIRdDwri8xCXOZ3hwfwHENeTjNRFXAX03sRG_TvneQUjRjJgmLUIJOiSWzMlSnuBm6Sv62WLsSJ1FPDBURGr9wOT6UTeh0G8rMkQ12MY2xuC4zH8jWYRBzAIS-n4UKBFGmpVcOyPfQHONkTLoC-ZPfs1VIsJGoMnrRIbP7wV_XJy0j8Q" />
-                        </div>
-                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent">
-                            <p class="font-headline text-white uppercase tracking-widest text-sm font-bold">Modern
-                                Pompadour</p>
+                            <img alt="Corte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="corte3.png" />
                         </div>
                     </div>
                     <!-- Item 4 -->
                     <div class="w-[350px] flex-shrink-0 group relative overflow-hidden reveal delay-4">
                         <div class="aspect-[3/4] overflow-hidden">
-                            <img alt="Sculpted Beard"
-                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO4fx9e91Eu9lj_ssMETvQYZJZCax6L73KyLNL_rNOeE-CjUKaosC06_GcfCupgl078Vx1M1N1pwbw67XMIgSn096uesijH8EJd_0cOPATcccAyxwSvwhoUomjybz_hItw6EpG13CBmqW9qKm0mrLMaYYXQ3v0D-AY7XQrwWT3IBfk_fwhcGtCUoUQFMui3K-9J41OI_ww7wRqvSFEmJa-VhcSCHLv49lUF7RtnS_vfyvrK5LhTOCHOsjd8v527KiomdvctbrNLLE" />
+                            <img alt="Corte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="corte4.png" />
                         </div>
-                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent">
-                            <p class="font-headline text-white uppercase tracking-widest text-sm font-bold">Sculpted
-                                Beard</p>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden reveal delay-5">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="corte5.png" />
+                        </div>
+                    </div>
+                    
+                    <!-- DUPLICADOS PARA LOOP INFINITO -->
+                    <!-- Item 1 (Clone) -->
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="corte1.png" />
+                        </div>
+                    </div>
+                    <!-- Item 2 (Clone) -->
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="corte2.png" />
+                        </div>
+                    </div>
+                    <!-- Item 3 (Clone) -->
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="corte3.png" />
+                        </div>
+                    </div>
+                    <!-- Item 4 (Clone) -->
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="corte4.png" />
+                        </div>
+                    </div>
+                    <!-- Item 5 (Clone) -->
+                    <div class="w-[350px] flex-shrink-0 group relative overflow-hidden">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img alt="Corte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" src="corte5.png" />
                         </div>
                     </div>
                 </div>
@@ -594,10 +601,10 @@
                     Sinta-se Confiante.<br />Mantenha o Estilo.</h2>
                 <p class="text-white/60 text-xl mb-12 font-light">Pare de se contentar com o 'bom o suficiente'.
                     Experimente a precisão de um mestre barbeiro.</p>
-                <button
-                    class="bg-error text-white px-16 py-6 font-headline uppercase tracking-widest text-xl hover:bg-white hover:text-black transition-all duration-300 active:scale-95">
+                <a href="https://wa.me/5541997831784?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank"
+                    class="bg-error text-white px-16 py-6 font-headline uppercase tracking-widest text-xl hover:bg-white hover:text-black transition-all duration-300 active:scale-95 flex items-center justify-center w-full md:w-auto mx-auto max-w-lg">
                     AGENDE SEU HORÁRIO HOJE
-                </button>
+                </a>
             </div>
         </section>
         <!-- Location & Contact -->
@@ -610,13 +617,13 @@
                             <div>
                                 <h4 class="font-headline uppercase tracking-widest text-xs font-bold text-error mb-4">
                                     Endereço</h4>
-                                <p class="text-2xl font-light">Av. Litorânea, 123<br />Rio de Janeiro, RJ</p>
+                                <p class="text-2xl font-light">Rod. da Uva, 946<br />Roça Grande<br />Colombo - PR, 83402-386<br />Brasil</p>
                             </div>
                             <div>
                                 <h4
                                     class="font-headline uppercase tracking-widest text-xs font-bold text-secondary mb-4">
                                     Contato</h4>
-                                <p class="text-2xl font-light">T: (21) 99999-0199<br />E: hello@fasteddie.com</p>
+                                <p class="text-2xl font-light">T: (41) 99783-1784</p>
                             </div>
                             <div class="md:col-span-2">
                                 <h4 class="font-headline uppercase tracking-widest text-xs font-bold text-black mb-4">
@@ -630,7 +637,7 @@
                         </div>
                         <div class="mt-12">
                             <a class="inline-flex items-center gap-4 bg-[#25D366] hover:bg-black text-white px-10 py-6 font-headline uppercase tracking-widest text-lg transition-all duration-300 group"
-                                href="#">
+                                href="https://wa.me/5541997831784?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank">
                                 <span class="material-symbols-outlined text-3xl">chat</span>
                                 <span>Agendar pelo WhatsApp</span>
                             </a>
@@ -639,14 +646,9 @@
                         </div>
                     </div>
                     <div class="w-full lg:w-1/2 min-h-[500px] bg-surface-container-highest relative reveal-right">
-                        <img alt="Mapa de localização" class="w-full h-full object-cover grayscale opacity-50"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4kB3NtITFdY7vU4KjB3VBoHnemMORqrV3SZT6y4754XqsYjy24vqDnTuvelL5SmhtBe8PiqgC1LsjwQYMqQhcnvmj8_Av8ZoBXLF_eV0vzz59dP9mS7pY6fLX0AOtQ6XDGKPZ8I91cg6RmQD7AIxy5Iam2fpUPxZRdLM_8UW_SLhp0vyUO0rOeymu8Eizmgru3Kj-oy8GS06OkFGPtPQ87zNNdV1-X7pAvDVLeaUx_ih11Uegx1GZrDov-Zsc6CbeEGKTqFHLh4w" />
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div
-                                class="bg-black text-white p-8 font-headline font-bold uppercase tracking-tighter text-2xl reveal-scale delay-3">
-                                PIN: AV. LITORÂNEA 123
-                            </div>
-                        </div>
+                        <iframe
+                            src="https://maps.google.com/maps?q=Rod.+da+Uva,+946+-+Ro%C3%A7a+Grande,+Colombo+-+PR,+83402-386,+Brasil&amp;output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
@@ -657,8 +659,11 @@
         <div
             class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 gap-8 max-w-[1440px] mx-auto">
             <div class="flex flex-col items-center md:items-start">
-                <a class="text-xl font-bold tracking-tighter text-black uppercase font-headline mb-2" href="#">FAST
-                    EDDIE</a>
+                <a class="flex items-center gap-3 text-xl font-bold tracking-tighter text-black uppercase font-headline mb-2"
+                    href="#">
+                    <img src="logo.jpg" alt="Logo" class="w-8 h-8 rounded-full object-cover">
+                    BARBEARIA ALFA
+                </a>
                 <p class="text-[10px] font-['Manrope'] uppercase tracking-widest text-black/50">CORTES DE PRECISÃO.
                     ESTILO ATEMPORAL.</p>
             </div>
@@ -682,8 +687,7 @@
             </div>
         </div>
         <div class="w-full px-8 py-6 border-t border-black/5 text-center">
-            <p class="text-[10px] font-['Manrope'] uppercase tracking-widest text-black/40">© 2024 COAST BARBER SHOP –
-                FAST EDDIE. TODOS OS DIREITOS RESERVADOS.</p>
+            <p class="text-[10px] font-['Manrope'] uppercase tracking-widest text-black/40">© 2024 BARBEARIA ALFA. TODOS OS DIREITOS RESERVADOS.</p>
         </div>
     </footer>
     <script>
